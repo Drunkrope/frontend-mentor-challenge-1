@@ -21,6 +21,7 @@ main {
 p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
+  line-height: 1.6;
 }
 
 button {
@@ -38,8 +39,17 @@ i {
   border-radius: 100%;
 }
 
+footer {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fcaf7f;
+}
+
 /* mobile */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
   body {
     background-image: url("./images/bg-mobile.svg");
 
@@ -70,7 +80,6 @@ i {
 
   p {
     text-align: center;
-    line-height: 1.6;
   }
 
   button {
@@ -86,20 +95,20 @@ i {
 }
 
 /* desktop */
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 1000px) {
   body {
     background-image: url("./images/bg-desktop.svg");
-    background-size: 100%;
+    background-size: 90% 100%;
   }
 
   .container {
     display: flex;
-    margin-top: 100px;
+    margin-top: 90px;
     justify-content: space-between;
   }
 
   main {
-    width: 95%;
+    width: 90%;
   }
 
   .logo {
@@ -109,15 +118,19 @@ i {
 
   .mockup {
     display: block;
-    width: 47%;
+    width: 55%;
   }
 
   .content {
-    width: 47%;
+    width: 40%;
   }
 
   .title {
     font-weight: 700;
+  }
+
+  p {
+    font-size: 18px;
   }
 
   button {
@@ -126,5 +139,6 @@ i {
 
   .icons {
     text-align: right;
+    margin-bottom: 40px;
   }
 }
